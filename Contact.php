@@ -1,7 +1,7 @@
 <!DOCTYPE html5>
 <html>
     <head>
-        <title>Contact page</title>
+        <title>Subscribe</title>
         <link rel="stylesheet" href=" css/bootstrap.min.css">
         <style>
           body{

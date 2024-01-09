@@ -33,7 +33,7 @@
                 ?>
               <form action="processupdate.php" method="POST" >
                   <input type="hidden" name="ID" value="<?php echo $data['ID']; ?>">
-
+                     <
                     <div class="form-group">
                         <label>First Name</label><br>
                         <input type="text" value="<?php echo $data['firstname']; ?>" name="firstName" class="form-control" >

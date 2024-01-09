@@ -43,6 +43,7 @@
                                 while($row=mysqli_fetch_assoc($result))
                                 {
                             ?>
+                            
                         <td><?php echo $row['ID']; ?></td>
                         <td><?php echo $row['firstname']; ?></td>
                         <td><?php echo $row['secondname']; ?></td>

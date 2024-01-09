@@ -22,9 +22,9 @@
               ?>
              </div>
              <div class="row">
-               
+             <center><h1 style="color:white"><i>Acknowleging Football's Greatest</i></h1></center>
+               </div>
              
-             </div>   
               <div class="row"  >
                 <?php
                   include("footer.html");
