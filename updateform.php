@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href=" css/bootstrap.min.css">
 </head>
-<body >
+<body class="bg-dark text white">
     <div class="row">
         <?php
         include("nav.html");
@@ -31,34 +31,34 @@
                if ($data){
                     
                 ?>
-              <form action="processupdate.php" method="POST" >
+              <form action="processupdate.php" method="POST"  >
                   <input type="hidden" name="ID" value="<?php echo $data['ID']; ?>">
                      <
                     <div class="form-group">
-                        <label>First Name</label><br>
+                        <label style="color:white">First Name</label><br>
                         <input type="text" value="<?php echo $data['firstname']; ?>" name="firstName" class="form-control" >
                     </div>
                     <br>
                     <div class="form-group">
-                        <label>Second Name</label><br>
-                        <input type="number"  value="<?php echo $data['secondname']; ?>" name="secondName" class="form-control">
+                        <label style="color:white">Second Name</label><br>
+                        <input type="text"  value="<?php echo $data['secondname']; ?>" name="secondName" class="form-control">
                     </div>
                     <br>
                     <div class="form-group">
-                        <label>Telephone</label><br>
-                        <input type="text" value="<?php echo $data['telephone']; ?>" name="telephone" class="form-control" >
+                        <label style="color:white">Telephone</label><br>
+                        <input type="number" value="<?php echo $data['telephone']; ?>" name="telephone" class="form-control" >
                     </div>
                     <br>
                     <div class="form-group">
-                        <label>Email</label><br>
+                        <label style="color:white">Email</label><br>
                         <input type="text" value="<?php echo $data['email']; ?>" name="email" class="form-control">
                     </div><br>
                     <div class="form-group">
-                        <label>Gender</label><br>
+                        <label style="color:white">Gender</label><br>
                         <input type="text"  value="<?php echo $data['gender']; ?>" name="gender" class="form-control" >
                     </div><br>
                     <div class="form-group">
-                        <label>Best team</label><br>
+                        <label style="color:white">Best team</label><br>
                         <input type="text" value="<?php echo $data['bestteam']; ?>" name="bestteam" class="form-control">
                     </div><br>
                     <button type="submit" class="btn btn-primary">Submit</button>
