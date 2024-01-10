@@ -147,7 +147,7 @@
   <div class="row">
      <h3  style="color:ivory"><u><i>Ronaldinho Gaucho</i></u></h3>
      <div class="col-lg-6">
-         <img src="images/3.jpeg" width="650px" height="450px" >
+         <img src="images/roni.jpg" width="650px" height="450px" >
      </div>
 
      <div class="col-lg-6">

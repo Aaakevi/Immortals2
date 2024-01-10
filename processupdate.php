@@ -3,7 +3,7 @@
         require_once "Php/connect.php";
 
         $query ="UPDATE subscriptions SET firstName = ?, secondName= ?,
-        telephone = ?, email= ?, gender = ?, bestTeam=?, WHERE id =?,";
+        telephone = ?, email= ?, gender = ?, bestTeam=?, WHERE ID =?";
         $id =$_POST['ID'];
         $fn =$_POST['firstName'];
         $sn =$_POST['secondName'];
@@ -14,8 +14,7 @@
 
         $stmt = mysqli_prepare($con , $query);
 
-        mysqli_stmt_bind_param($stmt , "ssssssi", $fn ,$sn, $tel , $em 
-        , $gd , $bt , $id);
+        mysqli_stmt_bind_param($stmt , "ssssssi", $fn ,$sn, $tel , $em , $gd , $bt , $id);
 
         mysqli_stmt_execute($stmt);
 
