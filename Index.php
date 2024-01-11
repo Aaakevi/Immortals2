@@ -7,6 +7,7 @@
 <html>
     <head>
         <title>Immortals</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.PNG">
         <link rel="stylesheet" href=" css/bootstrap.min.css">
         <style>
           body{
@@ -64,42 +65,10 @@
                </center>
            </div>
            <center>
-              <h1 style="color:white"><b><i>The Immortals</i></b></h1>
-              <h3  style="color:white">Footballs Greatest</h3>
+              <h1 style="color:black"><b><i>The Immortals</i></b></h1>
+              <h3  style="color:black">Footballs Greatest</h3>
            </center>
-           <div class="row">
-           <?php
-              while($row=mysqli_fetch_assoc($result))
-               {
-                    ?>
-                 <div class="col-md-4 mb-4">
-                  <div class="card">
-                    <div class="card-header">
-                    <?php echo $row['firstname'] . "" . $row['secondname']; ?>                    </div>
-                    <div class="card-body">
-                      <p class="card-text"><?php echo $row['telephone']; ?></p>
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text"><?php echo $row['email']; ?></p>
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text"><?php echo $row['gender']; ?></p>
-                    </div>
-                    
-                     <div class="card-footer">
-                      <?php echo $row['bestteam']; ?>
-                   </div>
-                  </div>
-                    
-                </div>
-                <?php
-                 }
-               ?>
-              </div>
-                              
-
-
-            
+          
 
        
            

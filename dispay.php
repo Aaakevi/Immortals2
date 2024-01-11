@@ -1,4 +1,14 @@
-  <div class="row">
+  <html>
+    <head>
+        <style>
+              img{
+          object-fit: cover;
+        }
+        
+        </style>
+    </head>
+    <body>
+    <div class="row">
      <h3 style="color:ivory"><u><i>Lionel Messi</i></u></h3>
      <div class="col-lg-6">
          <img src="images/2.jpg" width="650px" height="450px" >
@@ -553,3 +563,5 @@
          </p>
      </div>
   </div>
+  </body>
+ </html>

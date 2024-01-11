@@ -8,10 +8,10 @@
 
     $query = "INSERT INTO legends (Legend,Legendyear,Team,Information) VALUES(?,?,?,?)";
 
-    $statement=mysqli_prepare($con , $query);
+    $stmt=mysqli_prepare($con , $query);
 
-    mysqli_stmt_bind_param($statement,"ssss",$name,$year,$team,$ds);
+    mysqli_stmt_bind_param($stmt,"ssss",$name,$year,$team,$ds);
 
-    mysqli_stmt_execute($statement);
+    mysqli_stmt_execute($stmt);
     echo "data submitted successfully";
 ?>

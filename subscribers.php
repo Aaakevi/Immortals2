@@ -1,14 +1,15 @@
-    <?php
-        require_once("Php/connect.php");
-        $query = "select * from subscriptions";
-        $result =mysqli_query($con , $query);
-    ?>
+<?php
+    require_once("Php/connect.php");
+    $query="SELECT* FROM subscriptions";
+    $result=mysqli_query($con , $query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscriptions</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.PNG">
     <link rel="stylesheet" href=" css/bootstrap.min.css">
    
 </head>
@@ -38,26 +39,24 @@
                             <th>Best team</th>
                             <th>Action</th>
                         </tr>
-                        <tr>
-                            <?php
-                                while($row=mysqli_fetch_assoc($result))
-                                {
-                            ?>
-                            
-                        <td><?php echo $row['ID']; ?></td>
-                        <td><?php echo $row['firstname']; ?></td>
-                        <td><?php echo $row['secondname']; ?></td>
-                        <td><?php echo $row['telephone']; ?></td>
-                        <td><?php echo $row['email']; ?></td>
-                        <td><?php echo $row['gender']; ?></td>
-                        <td><?php echo $row['bestteam']; ?></td>
-                        <td><a href="updateform.php?id=<?php echo $row['ID'];?>">UpdateData</a> </td>
-                      </tr>
-
-
+                       <tr>
                         <?php
-                             }
-                        ?>
+                            while($row=mysqli_fetch_assoc($result))
+                            {
+                             ?>
+                             <td><?php echo $row['ID'];?></td>   
+                             <td><?php echo $row['firstname'];?></td>   
+                             <td><?php echo $row['secondname'];?></td>   
+                             <td><?php echo $row['telephone'];?></td>   
+                             <td><?php echo $row['email'];?></td>   
+                             <td><?php echo $row['gender'];?></td>   
+                             <td><?php echo $row['bestteam'];?></td>  
+                             <td><a href="updateform.php?id=<?php echo $row['ID'];?>">Update Data</td>    
+                       </tr>
+
+                       <?php
+                            }
+                       ?>
                     </table>
                 </div>
               </div>

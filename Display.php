@@ -1,7 +1,8 @@
 <!DOCTYPE html5>
 <html>
     <head>
-        <title>Display page</title>
+        <title>Information</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.PNG">
         <link rel="stylesheet" href=" css/bootstrap.min.css">
         <style>
           body{

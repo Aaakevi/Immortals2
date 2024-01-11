@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Updateform</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.PNG">
     <link rel="stylesheet" href=" css/bootstrap.min.css">
 </head>
 <body class="bg-dark text white">
@@ -33,7 +34,7 @@
                 ?>
               <form action="processupdate.php" method="POST"  >
                   <input type="hidden" name="ID" value="<?php echo $data['ID']; ?>">
-                     <
+                     
                     <div class="form-group">
                         <label style="color:white">First Name</label><br>
                         <input type="text" value="<?php echo $data['firstname']; ?>" name="firstName" class="form-control" >

@@ -2,8 +2,7 @@
    if($_SERVER["REQUEST_METHOD"]== "POST"){
         require_once "Php/connect.php";
 
-        $query ="UPDATE subscriptions SET firstName = ?, secondName= ?,
-        telephone = ?, email= ?, gender = ?, bestTeam=?, WHERE ID =?";
+        $query ="UPDATE subscriptions SET firstname = ?, secondname= ?, telephone = ?, email= ?, gender = ?, bestteam=? WHERE ID =?";
         $id =$_POST['ID'];
         $fn =$_POST['firstName'];
         $sn =$_POST['secondName'];
@@ -18,7 +17,7 @@
 
         mysqli_stmt_execute($stmt);
 
-        header("Location: ../subscribers.php");
+        header("Location: subscribers.php");
         exit();
    }
    else{

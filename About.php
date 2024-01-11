@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>About page</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.PNG">
         <link rel="stylesheet" href=" css/bootstrap.min.css">
         <style>
           body{
@@ -12,7 +13,10 @@
           p{
             color:black;
           }
-          
+          img{
+          object-fit: cover;
+        }
+        
        
         </style> 
     </head>

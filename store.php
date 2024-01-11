@@ -130,4 +130,36 @@
                         </ul>
                       </div>
                     </div>
-              
+                    <div class="row">
+           <?php
+              while($row=mysqli_fetch_assoc($result))
+               {
+                    ?>
+                 <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-header">
+                    <?php echo $row['firstname'] . "" . $row['secondname']; ?>                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><?php echo $row['telephone']; ?></p>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><?php echo $row['email']; ?></p>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><?php echo $row['gender']; ?></p>
+                    </div>
+                    
+                     <div class="card-footer">
+                      <?php echo $row['bestteam']; ?>
+                   </div>
+                  </div>
+                    
+                </div>
+                <?php
+                 }
+               ?>
+              </div>
+                              
+
+
+            
