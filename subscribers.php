@@ -1,6 +1,7 @@
 <?php
     require_once("Php/connect.php");
-    $query="SELECT* FROM subscriptions";
+    $limit = 9;
+    $query="SELECT * FROM subscriptions LIMIT $limit";
     $result=mysqli_query($con , $query);
 ?>
 <!DOCTYPE html>
@@ -28,6 +29,7 @@
                     <h2>Subscribers</h2>
                 </div>
                 <div class="card-body">
+                   
                     <table class="table table-bordered text-center">
                         <tr class="bg-dark text-white">
                             <th>User ID</th>
@@ -41,29 +43,33 @@
                         </tr>
                        <tr>
                         <?php
-                            while($row=mysqli_fetch_assoc($result))
-                            {
-                             ?>
-                             <td><?php echo $row['ID'];?></td>   
-                             <td><?php echo $row['firstname'];?></td>   
-                             <td><?php echo $row['secondname'];?></td>   
-                             <td><?php echo $row['telephone'];?></td>   
-                             <td><?php echo $row['email'];?></td>   
-                             <td><?php echo $row['gender'];?></td>   
-                             <td><?php echo $row['bestteam'];?></td>  
-                             <td><a href="updateform.php?id=<?php echo $row['ID'];?>">Update Data</td>    
-                       </tr>
+                            while($row=mysqli_fetch_assoc($result)){
 
+                           ?>
+                             <td><?php echo $row['ID']; ?></td>
+                             <td><?php echo $row['firstname']; ?></td>
+                             <td><?php echo $row['secondname']; ?></td>
+                             <td><?php echo $row['telephone']; ?></td>
+                             <td><?php echo $row['email']; ?></td>
+                             <td><?php echo $row['gender']; ?></td>
+                             <td><?php echo $row['bestteam']; ?></td>
+                             <td><a href="updateform.php?id=<?php echo $row['ID']; ?>">Update Data</td>
+                       </tr>
                        <?php
                             }
                        ?>
+                       
                     </table>
                 </div>
               </div>
             </div>
          </div>
     </div>
-   
+   <center>
+   <button type="submit" class="btn btn-primary" >
+        <a href="more.php" style="color:white">More Information</a>
+    </button>
+   </center>
   
 </body>
 </html>
